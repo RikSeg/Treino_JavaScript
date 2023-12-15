@@ -18,7 +18,7 @@ const readline = require('readline').createInterface({
 //Formula de cálculo de consumo:
   function formula(valor_combustivel,eficiencia,distancia){
     const resultado = (parseFloat(valor_combustivel) * parseFloat(distancia) ) / parseFloat(eficiencia);
-    console.log('O custo da viagem é:',resultado);
+    console.log('O custo da viagem é:',resultado.toFixed(2));
   }
 //
 
