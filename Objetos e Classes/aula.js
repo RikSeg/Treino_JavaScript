@@ -20,10 +20,13 @@ pessoa.descrever();
 class Pessoa {
     nome;
     idade;
+    anoDeNascimento;
+
     //método construtor
     constructor(nome, idade) {
         this.nome = nome;
         this.idade = idade;
+        this.anoDeNascimento = 2023 - idade;
     }
 
     //método da classe
@@ -36,10 +39,12 @@ class Pessoa {
 
 //nova instância da classe
 
-const vitor = new Pessoa('Vitor', 25);
+const vitor = new Pessoa('Vitor', 26);
 
-const renan = new Pessoa('Renan', 23);
+const renan = new Pessoa('Renan', 30);
 
 
 vitor.descrever();
 renan.descrever();
+
+console.log(vitor);
