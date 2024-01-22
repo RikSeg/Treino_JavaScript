@@ -16,4 +16,6 @@ console.log(alunos);
 
 //Estruturas de Repetição
 
-
+for(let i=0; i<=alunos.length;i++){
+    console.log(i);
+}
